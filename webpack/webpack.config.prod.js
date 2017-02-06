@@ -58,7 +58,12 @@ module.exports = [
     },
     resolve: {
       root: [path.join(__dirname, "..", "app")],
-      extensions: ["", ".js", ".jsx", ".css"]
+      extensions: ["", ".js", ".jsx", ".css"],
+      alias: {
+        'react': 'inferno-compat',
+        'react-dom': 'inferno-compat',
+        'react-dom/server': 'inferno-server'
+      }
     },
     plugins: [
       new ExtractTextPlugin("styles.css", {allChunks: true}),
@@ -85,7 +90,12 @@ module.exports = [
     },
     resolve: {
       root: [path.join(__dirname, "..", "app")],
-      extensions: ["", ".js", ".jsx", ".css"]
+      extensions: ["", ".js", ".jsx", ".css"],
+      alias: {
+        'react': 'inferno-compat',
+        'react-dom/server': 'inferno-server',
+        'react-dom': 'inferno-compat'
+      }
     },
     plugins: [
       new webpack.optimize.OccurenceOrderPlugin(),

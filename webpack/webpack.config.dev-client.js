@@ -55,7 +55,12 @@ module.exports = {
   },
   resolve: {
     root: [path.join(__dirname, "..", "app")],
-    extensions: ["", ".js", ".jsx", ".css"]
+    extensions: ["", ".js", ".jsx", ".css"],
+    alias: {
+      'react': 'inferno-compat',
+      'react-dom/server': 'inferno-server',
+      'react-dom': 'inferno-compat',
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

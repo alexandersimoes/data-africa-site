@@ -73,8 +73,6 @@
     "postcss-nesting": "^2.3.1",
     "postcss-reporter": "^1.4.1",
     "postcss-simple-vars": "^3.0.0",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
     "react-helmet": "^3.1.0",
     "react-redux": "^4.4.1",
     "react-router": "^2.7.0",
@@ -90,6 +88,10 @@
     "warning": "^3.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.12.1"
+    "webpack-hot-middleware": "^2.12.1",
+
+    "inferno": "^1.2.2",
+    "inferno-compat": "^1.2.2",
+    "inferno-server": "^1.2.2"
   }
 }
